@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Простой макет HTML-страницы</title>
+    <style>
+        /* Базовые сбросы стилей */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            line-height: 1.6;
+            color: #333;
+            background-color: #f9f9f9;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        /* Стили контейнера */
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* Стили шапки */
+        header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 1.5rem 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: #3498db;
+        }
+        
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+        
+        nav li {
+            margin-left: 1.5rem;
+        }
+        
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        
+        nav a:hover {
+            color: #3498db;
+        }
+        
+        /* Основное содержимое */
+        main {
+            flex: 1;
+            padding: 2rem 0;
+        }
+        
+        .main-content {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+        }
+        
+        .content {
+            flex: 3;
+            min-width: 300px;
+            background-color: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+        
+        aside {
+            flex: 1;
+            min-width: 250px;
+            background-color: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+        
+        h1 {
+            color: #2c3e50;
+            margin-bottom: 1.5rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid #3498db;
+        }
+        
+        h2 {
+            color: #2c3e50;
+            margin: 1.2rem 0 0.8rem;
+        }
+        
+        p {
+            margin-bottom: 1rem;
+        }
+        
+        .feature-list {
+            margin-left: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        .feature-list li {
+            margin-bottom: 0.5rem;
+        }
+        
+        /* Боковая панель */
+        .sidebar-widget {
+            margin-bottom: 2rem;
+        }
+        
+        .sidebar-widget h3 {
+            color: #3498db;
+            margin-bottom: 0.8rem;
+            font-size: 1.2rem;
+        }
+        
+        /* Подвал */
+        footer {
+            background-color: #2c3e50;
+            color: #ecf0f1;
+            text-align: center;
+            padding: 1.5rem 0;
+            margin-top: 2rem;
+        }
+        
+        /* Адаптивность */
+        @media (max-width: 768px) {
+            .header-content {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .logo {
+                margin-bottom: 1rem;
+            }
+            
+            nav ul {
+                justify-content: center;
+                flex-wrap: wrap;
+            }
+            
+            nav li {
+                margin: 0 0.8rem;
+            }
+            
+            .main-content {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Шапка сайта -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">МойСайт</div>
+                <nav>
+                    <ul>
+                        <li><a href="#">Главная</a></li>
+                        <li><a href="#">О нас</a></li>
+                        <li><a href="#">Услуги</a></li>
+                        <li><a href="#">Портфолио</a></li>
+                        <li><a href="#">Контакты</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Основное содержимое -->
+    <main class="container">
+        <div class="main-content">
+            <!-- Основной контент -->
+            <section class="content">
+                <h1>Добро пожаловать на наш сайт!</h1>
+                <p>Это простая HTML-страница с современным дизайном. Здесь представлены основные структурные элементы, которые обычно используются при создании веб-страниц.</p>
+                
+                <h2>О нашем проекте</h2>
+                <p>Данный макет демонстрирует использование семантических HTML-тегов, таких как &lt;header&gt;, &lt;main&gt;, &lt;section&gt;, &lt;aside&gt; и &lt;footer&gt;. Эти элементы помогают структурировать содержимое страницы и улучшают её доступность.</p>
+                
+                <h2>Основные возможности</h2>
+                <ul class="feature-list">
+                    <li>Чистая и понятная структура HTML</li>
+                    <li>Адаптивный дизайн для мобильных устройств</li>
+                    <li>Современный внешний вид с использованием CSS</li>
+                    <li>Семантическая разметка для лучшей доступности</li>
+                    <li>Простая навигация по странице</li>
+                </ul>
+                
+                <h2>HTML5 и современный веб-дизайн</h2>
+                <p>HTML5 предоставляет разработчикам мощные инструменты для создания структурированных и интерактивных веб-страниц. В сочетании с CSS3 можно создавать привлекательные и функциональные интерфейсы, которые работают на всех устройствах.</p>
+            </section>
+            
+            <!-- Боковая панель -->
+            <aside>
+                <div class="sidebar-widget">
+                    <h3>Новости</h3>
+                    <p>Мы запустили новый дизайн нашего сайта! Теперь он полностью адаптивен и отлично выглядит на мобильных устройствах.</p>
+                </div>
+                
+                <div class="sidebar-widget">
+                    <h3>Полезные ссылки</h3>
+                    <ul>
+                        <li><a href="#">Документация HTML</a></li>
+                        <li><a href="#">Справочник CSS</a></li>
+                        <li><a href="#">Примеры кода</a></li>
+                        <li><a href="#">Форум разработчиков</a></li>
+                    </ul>
+                </div>
+                
+                <div class="sidebar-widget">
+                    <h3>Контакты</h3>
+                    <p>Email: info@example.com</p>
+                    <p>Телефон: +7 (123) 456-78-90</p>
+                </div>
+            </aside>
+        </div>
+    </main>
+
+    <!-- Подвал сайта -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 МойСайт. Все права защищены.</p>
+            <p>Простой макет HTML-страницы для демонстрации</p>
+        </div>
+    </footer>
+</body>
+</html>
