@@ -1,6 +1,6 @@
 const CONFIG = {
     storeId: "dd420eef-c2db-4ee6-8a5d-2b865129cc83", 
-    apiUrl: "https://https://split.notissimus.com/api/order/create", 
+    apiUrl: "https://split.notissimus.com/api/order/create", 
 };
 
 document.addEventListener("DOMContentLoaded", () => {
