@@ -1,3 +1,4 @@
+console.log("123")
 const CONFIG = {
     storeId: "dd420eef-c2db-4ee6-8a5d-2b865129cc83", 
     apiUrl: "https://split.notissimus.com/api/order/create", 
