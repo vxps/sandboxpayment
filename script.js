@@ -1,5 +1,5 @@
 const CONFIG = {
-    storeId: "5a81f7ad-09f8-444b-815a-0c7f897ef0e1", 
+    storeId: "dd420eef-c2db-4ee6-8a5d-2b865129cc83", 
     apiUrl: "https://ha-isomorphic-believably.ngrok-free.dev/api/order/create", 
 };
 
